@@ -245,11 +245,6 @@ public:
     virtual bool isOpaque() const;
 
     /*
-     * needsDithering - true if this surface needs dithering
-     */
-    virtual bool needsDithering() const     { return mNeedsDithering; }
-
-    /*
      * isSecure - true if this surface is secure, that is if it prevents
      * screenshots or VNC servers.
      */
@@ -383,9 +378,6 @@ private:
     bool mFiltering;
     // Whether filtering is needed b/c of the drawingstate
     bool mNeedsFiltering;
-
-    // Whether dithering is needed
-    bool mNeedsDithering;
 
     // page-flip thread (currently main thread)
     bool mSecure; // no screenshots
