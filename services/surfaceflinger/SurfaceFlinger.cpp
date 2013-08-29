@@ -105,7 +105,6 @@ SurfaceFlinger::SurfaceFlinger()
         mBootFinished(false),
         mUseDithering(0),
         mPrefer16bpp(0)
-        mUseDithering(0)
 {
     ALOGI("SurfaceFlinger is starting");
 
